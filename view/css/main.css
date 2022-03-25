@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #116466;
+    color: #FFCB9A;
+    text-align: center;
+  }
+  a{
+    text-decoration: none;
+  }
+
+    
+  input[type=text]{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fbeec1;
+    color: black;
+    resize: vertical;
+  }
+  input[type=number]{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fbeec1;
+    color:black;
+    resize: vertical;
+  }
+  input[type=submit]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 50%;
+  }
+  input[type=submit]:hover{
+    background-color: #4586a0;
+  }
+  select{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fbeec1;
+    color:black;
+    resize: vertical;
+  }
+    
+  label {
+    padding: 5px 12px 12px 0;
+    display: inline-block;
+  }
+    
+  button{
+    background-color: #04AA6D;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    margin-left: 250px;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+    width: 15%;
+  }
+  .add{
+    float: center;
+    margin-left: 418px;
+  }
+    
+  button:hover {
+    background-color: #4586a0;
+  }
+  a:hover{
+    color:#3e04aa;
+  }
+    
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    background-color: #317eaa;
+  }
+    
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+    
+  .col-75 {
+    float: center;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  table {
+    width: 85%;
+    border-collapse: collapse;
+    border: 2px solid #fbeec1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  th, td {
+    padding: 20px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid #fbeec1;
+  }
+    
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #footer{
+    position: relative;
+  }
+  #footer p {
+    text-align: right;
+  }
+    
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit]{
+      width: 100%;
+      margin-top: 15px;
+    }
+    button{
+      display: flex;
+      float: center;
+      width: 50%;
+      margin-left: 118px;
+      padding-left: 100px;
+    }
+    .add{
+      display: flex;
+      float: center;
+      width: 50%;
+      margin-left: 118px;
+      padding-left: 85px;
+    }
+  }
